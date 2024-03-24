@@ -1,0 +1,10 @@
+@import './base.css';
+
+body {
+  /* background-color: #372883; */
+  background-color: #372883;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Muller", sans-serif;
+}
