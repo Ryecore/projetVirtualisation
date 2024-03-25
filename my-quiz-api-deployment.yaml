@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: quiz-api-deployment
+  namespace: quiz-namespace
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: quiz-api
+  template:
+    metadata:
+      labels:
+        app: quiz-api
+    spec:
+      containers:
+        - name: quiz-api
+          image: gabi201265/quiz-prod-api:latest
+          ports:
+            - containerPort: 5000
